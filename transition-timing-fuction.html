@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+        cursor: pointer;
+        font-family: sans-serif, 'Courier New', Courier, monospace;
+        font-weight: bold;
+        text-align: center;
+        }
+
+        .container:hover .circle {
+        transform: translateX(200px);
+        }
+        .circle {
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        display: grid;
+        place-content: center;
+        transition: transform 1s;
+        }
+
+        .one {
+        background:rgb(150, 68, 150);
+        transition-timing-function: linear;
+        }
+
+        .two {
+        background: Orchid;
+        transition-timing-function: ease;
+        }
+
+        .three {
+        background: Violet;
+        transition-timing-function: ease-in;
+        }
+
+        .four {
+        background: Plum;
+        transition-timing-function: ease-out;
+        }
+
+        .five {
+        background: Thistle;
+        transition-timing-function: ease-in-out;
+        }
+
+        .six {
+        background: Lavender;
+        transition-timing-function: cubic-bezier(.51,.72,.91,.26);
+        }
+            </style>
+</head>
+<body>
+    <div class="container">
+        <div class="circle one">linear</div>
+        <div class="circle two">ease</div>
+        <div class="circle three">ease-in</div>
+        <div class="circle four">ease-out</div>
+        <div class="circle five">ease-in-out</div>
+        <div class="circle six">cubic-bezier</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif, 'Courier New', Courier, monospace;
+        font-weight: bold;
+        }
+
+        .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: space-around;
+        justify-items: center;
+        align-items: center;
+        }
+
+        .box {
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+        display: grid;
+        place-content: center;
+        }
+
+        /* Transiciones */
+
+        .box1 {
+        background: LightCoral;
+        }
+
+        .box2 {
+        background: Salmon;
+        }
+
+        .box3 {
+        background: DarkSalmon;
+        }
+
+        /* Transformaciones */
+
+        .box1:hover {
+        transform: translate(-25px);
+        }
+
+        .box2:hover {
+        transform: rotate(45deg);
+        }
+
+        .box3:hover {
+        transform: skew(25deg,25deg);
+        }
+    </style>
+    </head>
+     <body>
+        <div class="container">
+                <div class="box box1">Translate</div>
+                <div class="box box2">Rotate</div>
+                <div class="box box3">Skew</div>
+        </div>
+    </body>
+    </html>

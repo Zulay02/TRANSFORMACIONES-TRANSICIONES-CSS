@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container div{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+
+
+}
+
+.shadow{
+  border: 1px solid transparent;
+  background-color: grey;
+}
+
+.translate{
+  display: grid;
+  border: 1px solid black;
+  place-content: center;
+  font-size: 1.5rem;
+  background-color: skyblue;
+  cursor: pointer;
+
+}
+
+/* ¡Prueba con lo que quieras!! */
+.ejeX:hover {
+  transform: translateX(50px);
+}
+
+.ejeY:hover {
+  transform: translateY(50px);
+}      
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="shadow">
+    <div class="translate ejeX">translateX</div>
+    </div>
+      
+    <div class="shadow">
+    <div class="translate ejeY">translateY</div>
+    </div>
+    </div>
+</body>
+</html>

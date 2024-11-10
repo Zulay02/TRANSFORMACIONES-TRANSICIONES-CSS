@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+  height: auto;
+  align-items: center;
+}
+
+.container div{
+  width: 200px;
+  height: 200px;
+}
+
+.shadow{
+  border: 1px solid transparent;
+  background-color: grey;
+}
+
+.rotate{
+  display: grid;
+  border: 1px solid black;
+  place-content: center;
+  font-size: 1.5rem;
+  background-color: skyblue;
+  cursor: pointer;
+
+}
+
+/* ¡Prueba con lo que quieras!! */
+.ejeXY:hover {
+  transform: rotate(45deg);
+}
+
+.ejeX:hover {
+  transform: rotateX(45deg);
+}
+
+.ejeY:hover {
+  transform: rotateY(45deg);
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="shadow">
+        <div class="rotate ejeXY">rotate</div>
+      </div>
+      
+      <div class="shadow">
+        <div class="rotate ejeX">rotateX</div>
+      </div>
+      
+      <div class="shadow">
+        <div class="rotate ejeY">rotateY</div>
+      </div>
+    </div>    
+</body>
+</html>
